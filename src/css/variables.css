@@ -1,0 +1,15 @@
+:root{
+    --cor-fundo-azul : rgba(22, 20, 97, 1);
+    --cor-objetos: rgba(91, 139, 200, 1);
+    --cor-circulos: rgba(62, 195, 217, 1);
+}
+
+:root{
+    --fonte-primaria: 'Montserrat', sans serif;
+    --fonte-segundaria: 'Krona One', sans serif;
+    --fonte-extra-grande: 6.5rem;
+    --fonte-grande: 4rem;
+    --fonte-medio: 2.8rem;
+    --fonte-normal: 2.2rem;
+    --fonte-pequena: 2rem;
+}

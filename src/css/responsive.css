@@ -1,0 +1,46 @@
+@media (max-width: 768px){
+    .container .about{
+        flex-wrap: wrap;
+    }
+
+    .container .about .texto{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* .about .texto p{
+        font-weight: 600;
+    } */
+
+    .about .texto .btn-register{
+        margin-bottom: 30px; 
+    }
+
+    .footer .social{
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 425px){
+    .container .about{
+        flex-wrap: wrap;
+    }
+
+    .container .about .texto{
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .texto p{
+        font-weight: 600;
+    }
+
+    .about .texto .btn-register{
+        margin-bottom: 30px; 
+    }
+
+    .footer .social{
+        justify-content: center;
+    }
+}
