@@ -13,3 +13,7 @@
     --fonte-normal: 2.2rem;
     --fonte-pequena: 2rem;
 }
+
+:root{
+    --mobile-padding: 3rem;
+}
