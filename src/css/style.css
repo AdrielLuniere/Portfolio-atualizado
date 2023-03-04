@@ -1,8 +1,5 @@
-html{
-    font-size: 62.5%;
-}
 
-body{
+/* body{
     font-family: 'Open Sans', sans-serif;
     background: url(../images/bg-desktop.svg)  var(--violet-color) no-repeat;
     background-size: cover;
@@ -109,4 +106,4 @@ body{
 .footer .social a:hover{
     color: var(--magenta-color);
     border-color: var(--magenta-color);
-}
+} */ 
