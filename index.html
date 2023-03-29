@@ -1,69 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adriel Lunière - Desenvolvedor Frontend</title>
-    <link rel="shortcut icon" href="src/img/ms-icon-310x310.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="src/img/ms-icon-310x310.png"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="src/css/font-awesome.css">
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/variables.css">
-    <link rel="stylesheet" href="src/css/globais.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> 
-</head>
-<body>
-    
+    <link rel="stylesheet" href="src/css/font-awesome.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/variables.css" />
+    <link rel="stylesheet" href="src/css/globais.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/home.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+  </head>
+  <body>
+
     <header class="header">
-        <div class="container">
-            <div class="row justify-content-between alinhar-itens-no-centro">
+      <div class="container">
+        <div class="row justify-content-between alinhar-itens-no-centro">
+          <a href="#">
+            <img src="src/img/logo.png" alt="logo" />
+          </a>
+          <nav>
+            <input id="menu-hambuguer" type="checkbox" />
 
-                <a href="#">
-                    <img src="src/img/logo.png" alt="logo">
-                </a>
-                <nav>
-                    <input id="menu-hambuguer" type="checkbox"/>
+            <label class="close-menu-label" for="menu-hambuguer">
+              <div class="menu">
+                <span class="hambuguer"></span>
+              </div>
+            </label>
 
-                    <label class="close-menu-label" for="menu-hambuguer">
-                        <div class="menu" >
-                            <span class="hambuguer"></span>
-                        </div>
-                    </label>
-
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre-mim">Sobre mim</a></li>
-                        <li><a href="#projestos">Projetos</a></li>
-                        <li><a href="#habilidade">Habilidades</a></li>
-                    </ul>
-
-                </nav>
-
-            </div>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#sobre-mim">Sobre mim</a></li>
+              <li><a href="#projestos">Projetos</a></li>
+              <li><a href="#habilidade">Habilidades</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
 
-    <section class="hone">
 
+    <section class="home">
+      <div class="container">
+        <div class="row full-screen alinhar-itens-no-centro">
+          <div class="text-home">
+            <h1>ADRIEL LUNIÈRE</h1>
+            <h2>DESENVOLVEDOR FRONTEND</h2>
+            <p class="text-frase">
+                O fracasso é somente uma oportunidade <br>de começar de novo, porém de
+                forma mais <br>inteligente - Henri Ford<br>
+
+              <div class="linkedin">
+                <a href="https://www.linkedin.com/in/adriel-lunière-41b88716a/"
+                target="_blank" class="link">Linkedin</a>
+              </div>
+          </div>
+          <div class="img-home">
+            <div>
+                <img class="outer-shadow" src="src/img/notbook.png" alt="notbook" />                
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="sobre-mim">
-        
-    </section>
+    <section class="sobre-mim"></section>
 
-    <section class="habilidades">
-        
-    </section>
+    <section class="habilidades"></section>
 
-    <section class="projetos">
-        
-    </section>
-
+    <section class="projetos"></section>
 
     <footer class="footer">
-
+      <div class="redes-sociais">
+        <a href="#" class="outer-shadow">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="outer-shadow">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" class="outer-shadow">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" class="outer-shadow">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -5,17 +5,26 @@ html{
     color: var(--cor-branca);
     font-size: 62.5%;
     font-weight: 500;
+    scroll-behavior: smooth;
 }
 
 body{
+    background-image: url(../img/objetos.png);
+    background-size: 1320px;
+    background-repeat: no-repeat;
     background-color: var(--cor-fundo-azul);
     font-family: var(--fonte-primaria);
     font-size: var(--fonte-pequena);
+
 }
 
-
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .justify-content-between{
