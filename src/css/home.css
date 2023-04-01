@@ -21,7 +21,6 @@
 }
 
 .home .text-home{
-    margin-bottom: 200px;
     margin-top: 15px;
 }
 .home .text-home h1{
@@ -34,11 +33,41 @@
 .home .text-home h2{
     font-family: var(--fonte-segundaria);
     color: var(--cor-font-nav);
-    margin: 0 0 80px 0;
+    margin: 0 0 58px 0;
     text-align: center;
     font-size: 25px;
     font-weight: 400;
     line-height: 50px;
+}
+
+.quadrado .quadradinho{
+    width: 8px;
+    height: 8px;
+    background-color: var(--cor-objetos);
+    margin: 0 3px;
+
+}
+
+.quadrado{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 88px 0;
+    
+}
+
+.content .bola{
+    width: 15px;
+    height: 15px;
+    background-color: var(--cor-circulos);
+    border-radius: 50%;
+    margin: 0 15px;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    
 }
 
 .linkedin {
@@ -58,11 +87,15 @@
 }
 
 .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: var(--fonte-primaria);
     font-weight: 700;
     font-size: 25px;
     text-align: center;
-    padding: 12px 0 ;
+    padding: 30px 0 ;
     transition: ease-in-out 0.3s;
 }
 
