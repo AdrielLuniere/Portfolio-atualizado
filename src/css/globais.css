@@ -8,11 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-
-    background-image: url(../img/objetos.png);
-    background-size: 1320px 615px;
-    background-repeat: no-repeat;
+body{    
     background-color: var(--cor-fundo-azul);
     font-family: var(--fonte-primaria);
     font-size: var(--fonte-pequena);
@@ -21,7 +17,8 @@ body{
 
 .container{
     max-width: 1440px;
-    margin: auto;
+    margin: auto;   
+    
 }
 .row{
     display: flex;
