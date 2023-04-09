@@ -14,8 +14,16 @@
 
 }
 
-.img-home{
-    border: 1px solid black;    
+
+.objetos-quadrado .quadrado1{
+    width: 85px;
+    height: 85px;
+    background-color: var(--cor-objetos);  
+}
+
+.objetos-quadrado{
+    margin: 0px 0px 0px 690px;
+    justify-content: flex-end;
 }
 
 .container1{
@@ -39,9 +47,18 @@
     margin-top: 15px;
     
 }
-/* .text-home .objetos-quadrado{
-    align-items: center;
-} */
+
+
+.objetos-retangulo .enfeite{
+    width: 45px;
+    height: 313px;
+    background-color: var(--cor-objetos);  
+}
+
+.objetos-retangulo{
+    margin-top: -200px;
+}
+
 .home .text-home h1{
     font-family: var(--fonte-segundaria);
     text-align: center;
@@ -58,14 +75,6 @@
     font-weight: 400;
     line-height: 50px;
 }
-
-/* .objetos-quadrado .enfeite{
-    width: 45px;
-    height: 313px;
-    background-color: var(--cor-objetos);
-
-} */
-
 
 .quadrado .quadradinho{
     width: 8px;
@@ -122,7 +131,7 @@
     font-weight: 700;
     font-size: 25px;
     text-align: center;
-    padding: 30px 0 ;
+    padding: 30px 0px 0px ;
     transition: ease-in-out 0.3s;
 }
 
