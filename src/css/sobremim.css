@@ -1,0 +1,125 @@
+
+.ajustador-2 {
+    padding: 144px 150px;
+    display: flex;
+    gap: 67px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--fonte-segundaria);
+    font-size: 45px;
+    font-weight: 400;
+    color: var(--cor-font-nav);    
+}
+
+
+
+.avatar {
+    background: var(--cor-objetos);
+    width: 519px;
+    height: 519px;
+    border: 3px solid var(--cor-font-nav);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: ease 1s;
+}
+.avatar img{
+    border-radius: 100%;
+}
+
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+
+.sobre-mim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-mim p {
+    font-weight: 500;
+    text-indent: 30px;
+    font-size: 20px;
+    max-width: 609.25px;
+    color: var(--cor-branca);
+    text-justify: Justified;
+}
+
+.objetos-quadrado2 .quadrado2{
+    width: 85px;
+    height: 85px;
+    background-color: var(--cor-objetos);  
+}
+
+.objetos-quadrado2{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 1500px;
+    top: 1530px;
+} 
+
+.objetos-retangulo2 .enfeite2{
+    width: 45px;
+    height: 313px;
+    background-color: var(--cor-objetos);  
+}
+
+.objetos-retangulo2{
+    position: absolute;
+    left: 0px;
+    top: 1200px;
+}
+
+.section{
+    background-image: url(../img/objetos.png);
+    background-size: 1320px 615px;
+    margin: auto;
+    background-position: 99%;
+    background-position-y: 150px;
+    background-position-x: 150px;
+    
+}
+
+@media (max-width:620px) {
+    .ajustador-2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .avatar {
+        margin-right: 60px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .ajustador-2 p {
+        font-size: 15px;
+    }
+    .sobre-mim p {
+        text-indent: 0;
+    }
+}
+
+@media(max-width:620px){
+
+    .circulo {
+        display: none;
+    }
+    .ajustador-2 {
+        max-width: 350px;
+        padding: 70px 30px;
+    }
+
+    .avatar {
+        margin-right: 0;
+    }
+}
