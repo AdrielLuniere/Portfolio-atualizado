@@ -1,3 +1,13 @@
+.section{
+    background-image: url(../img/objetos.png);
+    background-size: 1320px 615px;
+    margin: auto;
+    background-position: 99%;
+    background-position-y: 150px;
+    background-position-x: 150px;
+    
+}
+
 
 .ajustador-2 {
     padding: 144px 150px;
@@ -17,17 +27,18 @@ h2 {
 
 
 
-.avatar {
+.avatar img{
     background: var(--cor-objetos);
     width: 519px;
     height: 519px;
     border: 3px solid var(--cor-font-nav);
     border-radius: 100%;
     cursor: pointer;
-    transition: ease 1s;
+    
 }
-.avatar img{
-    border-radius: 100%;
+.avatar{
+    transition: ease 1s;
+    
 }
 
 
@@ -77,49 +88,54 @@ h2 {
     top: 1200px;
 }
 
-.section{
-    background-image: url(../img/objetos.png);
-    background-size: 1320px 615px;
-    margin: auto;
-    background-position: 99%;
-    background-position-y: 150px;
-    background-position-x: 150px;
-    
+.botao{
+    font-size: var(--fonte-normal);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: var(--cor-objetos);
 }
 
-@media (max-width:620px) {
+.botao:hover{
+    background-color: var(--cor-font-nav);
+    color: var(--cor-fundo-azul);
+}
+
+.sobre-mim  .botoes{
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media(max-width: 980px) {
+    
     .ajustador-2 {
-        justify-content: center;
-        text-align: center;
+        padding: 0;
+        align-items: center;
+        max-width: 100%;
+
     }
 
-    .avatar {
-        margin-right: 60px;
+    .avatar{
+    
+        padding: 0 0 0 50px;
+        
+    }
+    .avatar img{  
+        height: 200px;
     }
 
     h2 {
         font-size: 30px;
     }
 
-    .ajustador-2 p {
+    .sobre-mim p {
         font-size: 15px;
     }
-    .sobre-mim p {
-        text-indent: 0;
-    }
+    
+    .sobre-mim .informacoes{
+        padding: 0 var(--mobile-padding);
+        text-align: center;
+    } 
+
 }
 
-@media(max-width:620px){
-
-    .circulo {
-        display: none;
-    }
-    .ajustador-2 {
-        max-width: 350px;
-        padding: 70px 30px;
-    }
-
-    .avatar {
-        margin-right: 0;
-    }
-}
