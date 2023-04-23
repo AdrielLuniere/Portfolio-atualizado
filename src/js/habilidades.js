@@ -8,7 +8,7 @@ const sobreSkill = [
                     '<p>Typescript</p> <br> <p>É uma linguagem de programação de código aberto desenvolvida pela Microsoft que é uma extensão do JavaScript. Ela adiciona recursos avançados ao JavaScript, como a tipagem estática e interfaces, tornando mais fácil detectar e prevenir erros durante a fase de desenvolvimento.</p> <br>',
                     '<p>Github</p> <br> <p>É utilizado para hospedagem de código-fonte e arquivos com controle de versão usando o Git, que no qual esse meu portfolio está hospedado.</p> <br>',
                     '<p>Designer UX</p> <br> <p>UX Design é a área que desenha a experiência de usuários (user experience design) considerando negócios, tecnologia e pessoas.</p> <br>',
-                    '<p>Designer UI</p> <br> <p>UI design (user interface design, ou design de interface do usuário) é o processo de construção de interfaces (como sites e aplicativos) que podem ser utilizadas de maneira fácil, eficiente e agradável, tenho experiência na área desde 2014 quando tinha uma gráfica "Print King" fazendo landing page e etc, no figma e no AdobeXD.</p> <br>'
+                    '<p>Designer UI</p> <br> <p>UI design (design de interface do usuário) é o processo de construção de interfaces que podem ser utilizadas de maneira fácil, eficiente e agradável, tenho experiência na área desde 2014 quando tinha uma gráfica "Print King" fazendo landing page, logomarca e etc, no figma, AdobeXD, CorelDraw e Photoshop</p> <br>'
 ]
 const dataInicio = [
                     (new Date(2021, 10, 1)).getTime(), // 0
