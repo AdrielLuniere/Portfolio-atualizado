@@ -1,20 +1,22 @@
+
 .section{
     background-image: url(../img/objetos.png);
     background-size: 1320px 615px;
-    margin: auto;
+    background-repeat: no-repeat;
     background-position: 99%;
-    background-position-y: 150px;
-    background-position-x: 150px;
-    
+    background-position-y: 130px;
+    background-position-x: 200px;
+
 }
 
 
 .ajustador-2 {
-    padding: 144px 150px;
-    display: flex;
-    gap: 67px;
-    margin: 0 auto;
-    justify-content: center;
+
+        padding: 150px 0 0 0;
+        display: flex;
+        gap: 67px;
+        margin: 0 auto;
+        justify-content: center;
 }
 
 h2 {
@@ -59,7 +61,6 @@ h2 {
     font-size: 20px;
     max-width: 609.25px;
     color: var(--cor-branca);
-    text-justify: Justified;
 }
 
 .objetos-quadrado2 .quadrado2{
@@ -73,7 +74,7 @@ h2 {
     width: 85px;
     height: 85px;
     left: 1500px;
-    top: 1530px;
+    top: 1330px;
 } 
 
 .objetos-retangulo2 .enfeite2{
@@ -85,7 +86,7 @@ h2 {
 .objetos-retangulo2{
     position: absolute;
     left: 0px;
-    top: 1200px;
+    top: 960px;
 }
 
 .botao{

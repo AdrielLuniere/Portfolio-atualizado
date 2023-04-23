@@ -1,0 +1,189 @@
+.habilidades{
+    background-image: url(img/objetos.png);
+    background-size: 1320px 615px;
+    /* background-repeat: no-repeat; */
+    /* background-position: 99%;
+    background-position-y: 230px;
+    background-position-x: 400px; */
+}
+
+
+.habilidades-pd {
+    padding: 100px;
+}
+
+.habilidades-pd h2 { 
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.skills-descricao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding-bottom: 70px
+}
+
+.conteiner-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 37px;
+    max-width: 40%;
+}
+
+.skill-box {
+    height: 106px;
+    width: 106px;
+    background-color: var(--cor-font-nav);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.3s;
+}
+
+.skill-box:hover {
+    background-color: var(--cor-objetos);
+    transform: scale(1.05);
+}
+
+.conteiner-descricao {
+    color: #00ba89;
+    font-family: var(--fonte-primaria);
+    font-size: 25px;
+    max-width: 40%;
+}
+
+
+.objetos-quadrado3 .quadrado3{
+    width: 85px;
+    height: 85px;
+    background-color: var(--cor-objetos);  
+}
+
+.objetos-quadrado3{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 1500px;
+    top: 1900px;
+} 
+
+.objetos-retangulo3 .enfeite3{
+    width: 45px;
+    height: 313px;
+    background-color: var(--cor-objetos);  
+}
+
+.objetos-retangulo3{
+    position: absolute;
+    left: 0px;
+    top: 1550px;
+}
+
+.skill-box .icones-habilidades {
+    transition: ease-in-out 0.3s;
+    
+}
+
+.skill-box:hover .icones-habilidades {
+    opacity: 0;
+}
+
+.icones-habilidades{
+    width: 83px;
+    border-radius: 5px;
+
+}
+
+
+.skill1{
+    background-image: url(./img/html2.png);
+    background-size: 83px;
+
+}
+
+.skill2 {
+    background-image: url(./img/css2.png);
+    background-size: 83px;
+}
+
+.skill3 {
+    background-image: url(./img/js2.png);
+    background-size: 83px;
+}
+
+.skill4 {
+    background-image: url(./img/react2.png);
+    background-size: 83px;
+}
+
+
+.skill5 {
+    background-image: url(./img/typescript2.png);
+    background-size: 83px;
+}
+
+
+.skill16 {
+    background-image: url(./img/github2.png);
+    background-size: 83px;
+}
+
+.skill17 {
+    background-image: url(./img/designUX2.png);
+    background-size: 83px;
+}
+
+.skill18 {
+    background-image: url(./img/designUI2.png);
+    background-size: 83px;
+}
+
+
+@media (max-width: 980px) {
+
+    .conteiner-descricao {
+        height: 260px;
+    }
+
+    #habilidades {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-descricao {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        gap:50px;
+        padding-bottom: 70px;
+        align-items: center;
+    }
+
+    .skills-descricao p {
+        text-align: center;
+    }
+
+}
+@media (max-width:950px) {
+    .conteiner-skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 37px;
+        max-width: 300px;
+    }
+
+    .conteiner-descricao {
+        max-width: 300px;
+    }
+
+}
+

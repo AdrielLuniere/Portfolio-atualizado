@@ -1,5 +1,11 @@
 .header{
-    padding: 15px 15px;
+    width: 100%;
+    background: rgba(196, 196, 196, 0.11);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid 1px var(--cor-objetos);
 }
 
 
@@ -25,6 +31,7 @@
     border-radius: 15px;
     user-select: none;
     margin: 10px 45px;
+    transition: ease-in-out 0.3s;
     
 
 }
