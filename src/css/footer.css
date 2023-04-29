@@ -29,3 +29,8 @@
     margin: 10px 45px;
     
 }
+
+.redes-sociais i:hover{
+    background-color: rgba(196, 196, 196, 0.50);
+    color: var(--cor-circulos);
+}
