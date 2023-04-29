@@ -1,8 +1,8 @@
 .habilidades{
-    background-image: url(img/objetos.png);
+    background-image: url(../img/objetos.png);
     background-size: 1320px 615px;
-    /* background-repeat: no-repeat; */
-    /* background-position: 99%;
+    /* background-repeat: no-repeat;
+    background-position: 99%;
     background-position-y: 230px;
     background-position-x: 400px; */
 }
@@ -72,7 +72,7 @@
     width: 85px;
     height: 85px;
     left: 1500px;
-    top: 1900px;
+    top: 2000px;
 } 
 
 .objetos-retangulo3 .enfeite3{
@@ -84,7 +84,7 @@
 .objetos-retangulo3{
     position: absolute;
     left: 0px;
-    top: 1550px;
+    top: 1700px;
 }
 
 .skill-box .icones-habilidades {
