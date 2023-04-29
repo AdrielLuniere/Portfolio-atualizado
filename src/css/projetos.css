@@ -1,3 +1,4 @@
+
 .projetos{
     background-image: url(../img/objetos.png);
     background-size: 1320px 615px;
@@ -11,7 +12,7 @@
     padding: 70px 0px 0px;
 }
 
-.habilidades-pd h2 { 
+.project  h2 { 
     text-align: center;
     padding-bottom: 70px;
 }
@@ -27,7 +28,7 @@
     width: 85px;
     height: 85px;
     left: 1500px;
-    top: 2650px;
+    top: 2629px;
 } 
 
 .objetos-retangulo4 .enfeite4{
@@ -114,7 +115,6 @@
 .gallery-controls{
     display: flex;
     justify-content: center;
-    margin: 25px 0;
     height: 100px;
 }
 
@@ -204,4 +204,27 @@
 }
 
 
+.github-link {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
+.github-link a {
+    text-decoration: none;
+    display: block;
+    color: #00BA89;
+    font-size: var(--fonte-normal);
+    padding: 10px 20px;
+    transition:  0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.github-link a:hover{
+    background-color: var(--cor-objetos);
+    color: var(--cor-branca)
+    
+}
