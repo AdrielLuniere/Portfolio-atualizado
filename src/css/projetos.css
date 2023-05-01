@@ -229,3 +229,23 @@
     color: var(--cor-branca)
     
 }
+
+
+@media (max-width: 640px) {
+    
+    .gallery-container{
+        width: 400px;
+    }
+    .objetos-quadrado4 .quadrado4{
+        width: 0;
+        height: 0;
+        
+    }
+
+    .objetos-retangulo4 .enfeite4{
+        width: 0;
+        height: 0;
+    }
+
+}
+

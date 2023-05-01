@@ -54,7 +54,14 @@
     </header>
 
     <section class="home" id="home">
-      <div class="container1">
+      <div class="container">
+        <div class="container1">
+          <picture class="objetos">
+            <source  srcset="./src/img/objetos.png" media="(min-width:768px)">
+            <source  srcset="./src/img/objetos-responsivo-1.png" media="(min-width:640px)">
+            <img src="objetos-responsivo-1" alt="objetos-responsivo">
+        </picture>
+        </div>
         <div class="row full-screen alinhar-itens-no-centro">
           <div class="text-home">
             <h1>ADRIEL LUNIÈRE</h1>
@@ -119,11 +126,12 @@
           </div>
           <div class="img-home">
             <div>
-              <img
-                class="outer-shadow"
-                src="src/img/notbook.png"
-                alt="notbook"
-              />
+              <picture class="outer-shadow">
+                <source  srcset="./src/img/notbook.png" media="(min-width:768px)">
+                <source  srcset="./src/img/notbook-responsivo-1.png" media="(min-width:640px)">
+                <img src="./src/img/notbook.png" alt="notbook">
+            </picture>
+              
             </div>
             <div class="objetos-quadrado">
               <div class="quadrado1"></div>
@@ -139,6 +147,7 @@
           <div class="avatar">
             <img class="desenho-bg" src="src/img/eu.png" alt="avatar" />
           </div>
+          
           <div class="informacoes">
             <h2>SOBRE MIM</h2>
             <br />

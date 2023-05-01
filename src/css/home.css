@@ -22,21 +22,17 @@
 
 .outer-shadow{
     position: absolute;
-    top: 40px;
+    top: 0px;
     left: 750px;
     width: 816px;
     height: 600px;
 }
 
 .container1{
-    background-image: url(../img/objetos.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 1320px 615px;
-    margin: auto;
-    background-position: 99%;
-    background-position-y: -1px;
-    
+    position: absolute;
+    width: 1320px;
+    height: 615.32px;
+    left: 253px;
 }
 
 .home .text-home .text-frase{
@@ -104,7 +100,7 @@
 .quadrado{
     display: flex;
     justify-content: center;
-    margin: 0 0 88px 0;
+    margin-bottom: 88px;
     
 }
 
@@ -132,6 +128,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 40px;
+    z-index: 1;
 }
 
 .linkedin a {
@@ -159,11 +156,54 @@
 
 
 
-@media(max-width: 1280px){
+@media(max-width: 640px){
+
+    .container1 img{
+        position: absolute;
+        width: 500px;
+        left: -189px;
+        top: 20px;
+        z-index: -1;
+    }
+
+
+    .outer-shadow img{
+        position: absolute;
+        width: 460px;
+        left: -660px;
+        top: 238px;
+    }
+
     .home .text-home{
         flex: 0 0 100%;
         max-width: 100%;
         text-align: center;
-        padding: var(--mobile-padding);
+        padding-top: 130px;
+    }
+
+    .home .text-home h1 {
+        font-size: 20px;
+    }
+
+    .home .text-home h2{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .quadrado{
+        margin: 0;
+        padding-bottom: 270px;
+    }
+
+    .objetos-quadrado .quadrado1{
+        width: 0;
+        height: 0;
+       
+    }
+
+    .objetos-retangulo .enfeite{
+        width: 0;
+        height: 0;
+        
     }
 }

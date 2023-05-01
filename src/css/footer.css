@@ -34,3 +34,35 @@
     background-color: rgba(196, 196, 196, 0.50);
     color: var(--cor-circulos);
 }
+
+@media (max-width: 640px) {
+
+    .footer{
+        text-align: center;       
+    
+    }
+
+    .redes{
+        display: flex;
+        gap: 100px;
+    }
+
+    .redes-sociais{
+        justify-items: center;
+
+    }
+
+    .redes-sociais i{
+        font-size: 43px;
+        background-color: var(--cor-font-nav);
+        color: var(--cor-fundo-azul);
+        border-radius: 50px;
+        width: 55px;
+        height: 55px;
+        line-height: 57px;
+        padding: 0;
+        margin: 0;
+       
+    }
+    
+}

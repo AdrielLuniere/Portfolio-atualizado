@@ -12,7 +12,8 @@
 .header img{
     align-items: center;
     width: 98px;
-    height: 98px;    
+    height: 98px;  
+    margin: 10px;
 }
 
 .header nav ul{
@@ -176,4 +177,62 @@
     
 
 }
+
+@media(max-width: 640px){
+
+    .header{
+        width: 40%;
+        background-color: inherit;
+        border-bottom: none;
+        padding: 0;
+    }
+    .header .img-logo{
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        margin: 15px 0 0 15px;
+    }
+
+    .header .menu{
+        background-color: var(--cor-font-nav);
+        border-radius: 8px;
+        display: block;
+        
+    }
+
+    .header nav input:checked ~ ul {
+        display: block;
+        
+    }
+
+    .header nav{
+        position: absolute;
+        top: 30px;
+        right: 20px;         
+    }
+
+    .header nav ul{
+        display: none;
+        background-color: var(--cor-font-nav);
+        border-radius: 18px;
+        margin: 35px;
+        margin-right: -2px;
+        padding: 55px;
+        height: 350px;
+        
+    }
+
+    .header nav li a{
+        color: var(--cor-font-responsivo);
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        display: block;
+        
+    }
+
+}
+
 

@@ -11,12 +11,11 @@
 
 
 .ajustador-2 {
-
-        padding: 150px 0 0 0;
-        display: flex;
-        gap: 67px;
-        margin: 0 auto;
-        justify-content: center;
+    padding: 150px 0 0 0;
+    display: flex;
+    gap: 67px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 h2 {
@@ -113,20 +112,23 @@ h2 {
         padding: 0;
         align-items: center;
         max-width: 100%;
+        gap: 15px;
+        
 
     }
 
     .avatar{
-    
         padding: 0 0 0 50px;
         
     }
     .avatar img{  
-        height: 200px;
+        height: 250px;
     }
 
-    h2 {
+   
+    .ajustador-2 h2 {
         font-size: 30px;
+        text-align: center;
     }
 
     .sobre-mim p {
@@ -136,7 +138,20 @@ h2 {
     .sobre-mim .informacoes{
         padding: 0 var(--mobile-padding);
         text-align: center;
+        text-align: justify;
     } 
+
+    .objetos-quadrado2 .quadrado2{
+        width: 0;
+        height: 0;
+        background-color: var(--cor-objetos);  
+    }
+
+    .objetos-retangulo2 .enfeite2{
+        width: 0;
+        height: 0;
+        background-color: var(--cor-objetos);  
+    }
 
 }
 

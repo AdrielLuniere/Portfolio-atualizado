@@ -1,5 +1,5 @@
-const skills = document.querySelectorAll('.skill-box');
-const descricao = document.querySelector('.texto-descricao');
+const skills = document.querySelectorAll ('.skill-box');
+const descricao = document.querySelector ('.texto-descricao');
 const sobreSkill = [
                     '<p>HTML</p> <br> <p>É uma linguagem de marcação utilizada na construção de páginas na Web.</p> <br>',
                     '<p>CSS</p> <br> <p>É um mecanismo para adicionar estilo a um documento web.</p> <br>',

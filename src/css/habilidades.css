@@ -147,12 +147,23 @@
 }
 
 
-@media (max-width: 980px) {
+@media (max-width: 640px) {
 
     .conteiner-descricao {
         height: 260px;
     }
 
+    .habilidades-pd{
+        padding-top: 55px;
+        padding-bottom: 55px;
+
+    }
+
+    .habilidades-pd h2{
+        padding-bottom: 60px;
+    }
+
+    
     #habilidades {
         display: flex;
         justify-content: center;
@@ -162,17 +173,20 @@
         display: flex;
         flex-direction: column-reverse;
         margin: 0 auto;
-        gap:50px;
+        gap:30px;
         padding-bottom: 70px;
         align-items: center;
     }
 
     .skills-descricao p {
         text-align: center;
+        font-size: 17px;
+        text-align: justify;
+        color: var(--cor-branca);
+        background-color: var(--cor-objetos);
+        border-radius: 10px;
     }
 
-}
-@media (max-width:950px) {
     .conteiner-skills {
         display: flex;
         justify-content: center;
@@ -185,5 +199,15 @@
         max-width: 300px;
     }
 
-}
+    .objetos-quadrado3 .quadrado3{
+        width: 0;
+        height: 0;
+        
+    }
 
+    .objetos-retangulo3 .enfeite3{
+        width: 0;
+        height: 0;
+    }
+
+}
