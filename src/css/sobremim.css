@@ -108,6 +108,13 @@ h2 {
 
 @media(max-width: 980px) {
     
+    .container2 img{
+        position: absolute;
+        width: 500px;
+        left: -189px;
+        top: 800px;
+        z-index: -1;
+    }
     .ajustador-2 {
         padding: 0;
         align-items: center;
