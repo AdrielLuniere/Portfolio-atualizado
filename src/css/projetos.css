@@ -2,10 +2,10 @@
 .projetos{
     background-image: url(../img/objetos.png);
     background-size: 1320px 615px;
-    /* background-repeat: no-repeat;
-    background-position: 99%;
+     background-repeat: no-repeat;
+    /* background-position: 99%;
     background-position-y: 230px;
-    background-position-x: 400px; */
+    background-position-x: 400px;  */
 }
 
 .project {
@@ -53,6 +53,7 @@
     margin: 0 auto;
     max-width: 1000px;
     position: relative;
+    z-index: 0;
 }
 
 .gallery-item{
@@ -233,6 +234,11 @@
 
 @media (max-width: 640px) {
     
+    .projetos{
+        background-image: url(../img/objetos-responsivo-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .gallery-container{
         width: 400px;
     }

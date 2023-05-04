@@ -1,3 +1,9 @@
+.habilidades{
+    background-image: url(../img/objetos.png);
+    background-size: 1320px 615px;
+    background-repeat: no-repeat;
+    background-position: 99%;
+}
 
 .habilidades-pd {
     padding: 100px;
@@ -140,11 +146,11 @@
 
 @media (max-width: 640px) {
 
-    .container3 img{
-        position: absolute;
-        width: 500px;
-        top: 1900px;
-        z-index: -1;
+    .habilidades{
+        background-image: url(../img/objetos-responsivo-1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 99%;
     }
 
     .conteiner-descricao {

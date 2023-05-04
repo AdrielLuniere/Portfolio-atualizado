@@ -1,3 +1,9 @@
+.home{
+    background-image: url(../img/objetos.png);
+    background-size: 1320px 615px;
+    background-repeat: no-repeat;
+    background-position: 99%;
+}
 
 .home .full-screen{
     min-height: 86vh;
@@ -128,7 +134,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 40px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .linkedin a {
@@ -158,12 +164,10 @@
 
 @media(max-width: 640px){
 
-    .container1 img{
-        position: absolute;
-        width: 500px;
-        left: -189px;
-        top: 20px;
-        z-index: -1;
+    .home{
+        background-image: url(../img/objetos-responsivo-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
