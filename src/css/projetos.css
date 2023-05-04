@@ -232,12 +232,13 @@
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
     
     .projetos{
         background-image: url(../img/objetos-responsivo-1.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 600px;
+        background-position: 50%;
     }
     .gallery-container{
         width: 400px;

@@ -1,8 +1,10 @@
 .home{
     background-image: url(../img/objetos.png);
-    background-size: 1320px 615px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 99%;
+    background-position-x: 300px;
+    background-position-y: center;
+
 }
 
 .home .full-screen{
@@ -162,23 +164,25 @@
 
 
 
-@media(max-width: 640px){
+@media(max-width: 900px){
 
     .home{
         background-image: url(../img/objetos-responsivo-1.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 600px;
+        background-position: 50%;
     }
 
+    .outer-shadow {
+        width: 0;
+        height: 0;
 
-    .outer-shadow img{
-        position: absolute;
-        width: 460px;
-        left: -660px;
-        top: 238px;
     }
 
     .home .text-home{
+        background-image: url(../img/notbook-responsivo-1.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
         flex: 0 0 100%;
         max-width: 100%;
         text-align: center;

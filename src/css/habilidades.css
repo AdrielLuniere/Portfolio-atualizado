@@ -144,13 +144,13 @@
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
 
     .habilidades{
         background-image: url(../img/objetos-responsivo-1.png);
-        background-size: cover;
         background-repeat: no-repeat;
-        background-position: 99%;
+        background-size: 600px;
+        background-position: 50%;
     }
 
     .conteiner-descricao {

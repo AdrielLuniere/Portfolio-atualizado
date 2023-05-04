@@ -35,7 +35,7 @@
     color: var(--cor-circulos);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
 
     .footer{
         text-align: center;       
@@ -61,7 +61,7 @@
         height: 55px;
         line-height: 57px;
         padding: 0;
-        margin: 0;
+        margin: 5px;
        
     }
     
