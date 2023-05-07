@@ -171,6 +171,7 @@
         background-repeat: no-repeat;
         background-size: 600px;
         background-position: 50%;
+        max-width: 100%;
     }
 
     .outer-shadow {

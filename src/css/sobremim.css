@@ -110,6 +110,7 @@ h2 {
         background-repeat: no-repeat;
         background-size: 600px;
         background-position: 50%;
+        max-width: 100%;
        
     }
     .ajustador-2 {
