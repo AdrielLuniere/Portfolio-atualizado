@@ -101,50 +101,50 @@
 
 
 .skill1{
-    background-image: url(./img/html2.png);
+    background-image: url(../img/html2.png);
     background-size: 83px;
 
 }
 
 .skill2 {
-    background-image: url(./img/css2.png);
+    background-image: url(../img/css2.png);
     background-size: 83px;
 }
 
 .skill3 {
-    background-image: url(./img/js2.png);
+    background-image: url(../img/js2.png);
     background-size: 83px;
 }
 
 .skill4 {
-    background-image: url(./img/react2.png);
+    background-image: url(../img/react2.png);
     background-size: 83px;
 }
 
 
 .skill5 {
-    background-image: url(./img/typescript2.png);
+    background-image: url(../img/typescript2.png);
     background-size: 83px;
 }
 
 
 .skill16 {
-    background-image: url(./img/github2.png);
+    background-image: url(../img/github2.png);
     background-size: 83px;
 }
 
 .skill17 {
-    background-image: url(./img/designUX2.png);
+    background-image: url(../img/designUX2.png);
     background-size: 83px;
 }
 
 .skill18 {
-    background-image: url(./img/designUI2.png);
+    background-image: url(../img/designUI2.png);
     background-size: 83px;
 }
 
 
-@media (max-width: 900px) {
+ @media (max-width: 900px) {
 
     .habilidades{
         background-image: url(../img/objetos-responsivo-1.png);
@@ -205,6 +205,8 @@
     }
 
     .objetos-quadrado3 .quadrado3{
+        position: absolute;
+        left: -1400px;
         width: 0;
         height: 0;
         
@@ -214,5 +216,49 @@
         width: 0;
         height: 0;
     }
+
+    .skill1{
+        background-image: url(../img/html2.png);
+        background-size: 83px;
+    
+    }
+    
+    .skill2 {
+        background-image: url(../img/css2.png);
+        background-size: 83px;
+    }
+    
+    .skill3 {
+        background-image: url(../img/js2.png);
+        background-size: 83px;
+    }
+    
+    .skill4 {
+        background-image: url(../img/react2.png);
+        background-size: 83px;
+    }
+    
+    
+    .skill5 {
+        background-image: url(../img/typescript2.png);
+        background-size: 83px;
+    }
+    
+    
+    .skill16 {
+        background-image: url(../img/github2.png);
+        background-size: 83px;
+    }
+    
+    .skill17 {
+        background-image: url(../img/designUX2.png);
+        background-size: 83px;
+    }
+    
+    .skill18 {
+        background-image: url(../img/designUI2.png);
+        background-size: 83px;
+    }
+
 
 }

@@ -175,8 +175,11 @@
     }
 
     .outer-shadow {
+        position: absolute;
+        left: -10px;
         width: 0;
         height: 0;
+        
 
     }
 
@@ -184,6 +187,7 @@
         background-image: url(../img/notbook-responsivo-1.png);
         background-repeat: no-repeat;
         background-position: 50%;
+        background-size: 399px;
         flex: 0 0 100%;
         max-width: 100%;
         text-align: center;
@@ -205,6 +209,8 @@
     }
 
     .objetos-quadrado .quadrado1{
+        position: absolute;
+        left: -1300px;
         width: 0;
         height: 0;
        

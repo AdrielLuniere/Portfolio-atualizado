@@ -232,21 +232,22 @@
 }
 
 
-@media (max-width: 900px) {
+ @media (max-width: 900px) {
     
     .projetos{
         background-image: url(../img/objetos-responsivo-1.png);
         background-repeat: no-repeat;
         background-size: 600px;
         background-position: 50%;
-        max-width: 100%;
     }
     .gallery-container{
         width: 400px;
     }
     .objetos-quadrado4 .quadrado4{
+        position: absolute;
+        left: -1450px;
         width: 0;
-        height: 0;
+        height:0;
         
     }
 
