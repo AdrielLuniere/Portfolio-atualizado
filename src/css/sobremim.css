@@ -113,6 +113,7 @@ h2 {
         max-width: 100%;
        
     }
+
     .ajustador-2 {
         padding: 20px 0 0 0;
         align-items: center;
@@ -149,13 +150,18 @@ h2 {
     .objetos-quadrado2 .quadrado2{
         position: absolute;
         left: -1300px;
-        width: 0;
-        height: 0; 
+        width: 0px;
+        height: 0px; 
     }
 
     .objetos-retangulo2 .enfeite2{
         width: 0;
         height: 0;
+    }
+
+    .botao{
+        font-size: 16px;
+
     }
 
 } 
