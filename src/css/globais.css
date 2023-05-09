@@ -12,6 +12,7 @@ body{
     background-color: var(--cor-fundo-azul);
     font-family: var(--fonte-primaria);
     font-size: var(--fonte-pequena);
+    overflow-x: hidden;
 
 }
 
