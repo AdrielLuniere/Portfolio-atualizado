@@ -221,3 +221,14 @@
         
     }
 }
+
+@media(max-width: 420px){
+    
+    .quadrado{
+        width: 400px;
+        align-items: center;
+        margin: auto;
+        padding-bottom: 270px;
+    }
+
+}

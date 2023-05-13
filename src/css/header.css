@@ -46,7 +46,7 @@
     display: none;
     width: 60px;
     height: 60px;
-    align-self: flex-end;   
+    align-self: flex-end; 
 }
 
 .header nav label{
@@ -79,6 +79,7 @@
 
 .header .hambuguer:before{
     top: -10px
+    
 }
 
 .header .hambuguer:after{
@@ -157,8 +158,7 @@
     .header .menu{
         background-color: var(--cor-font-nav);
         border-radius: 8px;
-        display: block;
-        
+        display: block;        
     }
 
     .header nav input:checked ~ ul {
@@ -219,7 +219,20 @@
         background-color: var(--cor-font-nav);
         border-radius: 8px;
         display: block;
+        width: 45px;
+        height: 45px;
         
+    }
+
+    .header .hambuguer{
+        background-color: var(--cor-hambuguer);
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        top: 22px;
+        left: 8px;
+        transition: 0.5s ease-in-out;
     }
 
     .header nav input:checked ~ ul {
@@ -239,8 +252,8 @@
         border-radius: 18px;
         margin: 35px;
         margin-right: -2px;
-        padding: 35px;
-        width:230px;
+        padding: 30px;
+        width:250px;
         height: 290px; 
         
     }
@@ -256,5 +269,80 @@
     }
 
 }
+
+
+@media(max-width: 420px){
+
+    .header{
+        width: 100%;
+        background-color: inherit;
+        border-bottom: none;
+        padding: 0;
+    }
+    .header .img-logo{
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+        margin: 15px 0 0 15px;
+    }
+
+    .header .menu{
+        background-color: var(--cor-font-nav);
+        border-radius: 8px;
+        display: block;
+        width: 45px;
+        height: 45px;
+        
+    }
+
+    .header .hambuguer{
+        background-color: var(--cor-hambuguer);
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        top: 22px;
+        left: 8px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .header nav input:checked ~ ul {
+        display: block;
+        
+    }
+
+    .header nav{
+        position: absolute;
+        top: 30px;
+        right: 20px;         
+    }
+
+    .header nav ul{
+        display: none;
+        background-color: var(--cor-font-nav);
+        border-radius: 18px;
+        margin: 35px;
+        margin-right: -2px;
+        padding: 30px;
+        width:250px;
+        height: 290px; 
+        
+    }
+
+    .header nav li a{
+        color: var(--cor-font-responsivo);
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        display: block;
+        
+    }
+
+    
+
+}
+
 
 
