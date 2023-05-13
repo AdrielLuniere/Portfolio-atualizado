@@ -7,58 +7,50 @@
 
 }
 
-
-.ajustador-2 {
-    padding: 150px 0 0 0;
-    display: flex;
-    gap: 67px;
-    margin: 0 auto;
-    justify-content: center;
+.sobre-mim .row{
+    align-items: center;
+}
+.sobre-mim .imagem-sobre-mim{
+    max-width: 40%;
+    padding: 0 15px;
 }
 
-h2 {
-    text-align: center;
-    font-family: var(--fonte-segundaria);
-    font-size: 45px;
-    font-weight: 400;
-    color: var(--cor-font-nav);    
+.sobre-mim .imagem-sobre-mim .img-box{
+    padding: 15px;
+}
+
+.sobre-mim .informacoes-sobre-mim{
+    max-width: 50%;
+    padding: 0 25px;
+
+}
+
+.sobre-mim .informacoes-sobre-mim p{
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 
-
-.avatar img{
+.img-box img{
     background: var(--cor-objetos);
-    width: 519px;
-    height: 519px;
+    width: 419px;
+    height: 419px;
     border: 3px solid var(--cor-font-nav);
     border-radius: 100%;
     cursor: pointer;
     
 }
-.avatar{
+
+.img-box{
     transition: ease 1s;
     
 }
 
-
-.avatar:hover {
+.img-box:hover {
     transform: scale(1.05);
 }
 
-
-.sobre-mim{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.sobre-mim p {
-    font-weight: 500;
-    text-indent: 30px;
-    font-size: 20px;
-    max-width: 609.25px;
-    color: var(--cor-branca);
-}
 
 .objetos-quadrado2 .quadrado2{
     width: 85px;
@@ -116,38 +108,23 @@ h2 {
        
     }
 
-    .ajustador-2 {
-        padding: 20px 0 0 0;
-        align-items: center;
+    .sobre-mim .row{
+        justify-content: center;
+    }
+
+    .sobre-mim .imagem-sobre-mim{
         max-width: 100%;
-        gap: 15px;
-        
-
+        padding: 0 var(--mobile-padding);
+        margin-bottom: 50px;
     }
 
-    .avatar{
-        padding: 0 0 0 50px;
-        
-    }
-    .avatar img{  
-        height: 100%;
-    }
-
-   
-    .ajustador-2 h2 {
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .sobre-mim p {
-        font-size: 14px;
-    }
-    
-    .sobre-mim .informacoes{
+    .sobre-mim .informacoes-sobre-mim{
         padding: 0 var(--mobile-padding);
         text-align: center;
         text-align: justify;
-    } 
+        max-width: 100%;
+
+    }
 
     .objetos-quadrado2 .quadrado2{
         position: absolute;
@@ -162,7 +139,7 @@ h2 {
     }
 
     .botao{
-        font-size: 16px;
+        font-size: 18px;
 
     }
 
@@ -170,6 +147,14 @@ h2 {
 
 
 @media (max-width: 370px){
+
+    .section-title h2{
+        font-size: 35px;
+    }
+    .img-box img{
+        width: 200px;
+        height: 200px;
+    }
 
     .botao{
         font-size: 15px;

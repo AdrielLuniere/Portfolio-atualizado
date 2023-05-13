@@ -34,3 +34,22 @@ body{
 .alinhar-itens-no-centro{
     align-items: center;
 }
+
+.section{
+    padding: 7rem 0 7rem;
+}
+
+.section-title{
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 60px 0;
+}
+
+.section-title h2{
+    font-family: var(--fonte-segundaria);
+    font-size: 45px;
+    font-weight: 400;
+    color: var(--cor-font-nav);
+    text-transform: uppercase;
+}

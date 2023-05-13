@@ -6,13 +6,9 @@
 }
 
 .habilidades-pd {
-    padding: 100px;
+    padding: 80px;
 }
 
-.habilidades-pd h2 { 
-    text-align: center;
-    padding-bottom: 70px;
-}
 
 .skills-descricao {
     display: flex;
@@ -164,8 +160,9 @@
 
     }
 
-    .habilidades-pd h2{
+    .habilidades-pd .section-title h2{
         padding-bottom: 50px;
+        font-size: 35px;
     }
 
     

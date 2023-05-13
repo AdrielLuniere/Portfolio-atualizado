@@ -20,6 +20,10 @@
     
 }
 
+.redes h2{
+   color: #00BA89;
+}
+
 .redes-sociais i{
     font-size: var(--fonte-medio);
     background-color: var(--cor-font-nav);

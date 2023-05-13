@@ -10,11 +10,6 @@
     padding: 70px 0px 0px;
 }
 
-.project  h2 { 
-    text-align: center;
-    padding-bottom: 70px;
-}
-
 .objetos-quadrado4 .quadrado4{
     width: 85px;
     height: 85px;
@@ -26,7 +21,7 @@
     width: 85px;
     height: 85px;
     left: 1500px;
-    top: 2629px;
+    top: 2717px;
 } 
 
 .objetos-retangulo4 .enfeite4{
@@ -240,7 +235,7 @@
 
     }
     .gallery-container{
-        width: 350px;
+        height: 350px;
     }
     .objetos-quadrado4 .quadrado4{
         position: absolute;
@@ -257,6 +252,22 @@
 
 }
 
+@media (max-width: 420px){
+
+
+    .gallery .section-title h2{
+        font-size: 35px;
+    }
+    .github-link a {
+        background-color: var(--cor-objetos);
+        color: var(--cor-branca);
+        font-size: var(--fonte-normal);
+        padding: 10px 20px;
+        border-radius: 15px;
+    }    
+
+}
+
 @media (max-width: 370px){
 
     .gallery-controls button{
@@ -268,7 +279,19 @@
     margin: 0 50px;
     padding: 0 12px;
     text-transform: capitalize;
-}
+    }
+
+    .gallery .section-title h2{
+        font-size: 35px;
+    }
+
+    .github-link a {
+        background-color: var(--cor-objetos);
+        color: var(--cor-branca);
+        font-size: var(--fonte-normal);
+        padding: 10px 20px;
+        border-radius: 15px;
+    }    
 
 }
 
