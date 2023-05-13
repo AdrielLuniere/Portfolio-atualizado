@@ -257,3 +257,18 @@
 
 }
 
+@media (max-width: 370px){
+
+    .gallery-controls button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: var(--fonte-segundaria);
+    margin: 0 50px;
+    padding: 0 12px;
+    text-transform: capitalize;
+}
+
+}
+

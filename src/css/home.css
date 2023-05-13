@@ -232,3 +232,14 @@
     }
 
 }
+
+@media(max-width: 370px){
+    
+    .quadrado{
+        width: 350px;
+        align-items: center;
+        margin: auto;
+        padding-bottom: 270px;
+    }
+
+}

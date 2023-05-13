@@ -168,3 +168,12 @@ h2 {
 
 } 
 
+
+@media (max-width: 370px){
+
+    .botao{
+        font-size: 15px;
+
+    }
+}
+
