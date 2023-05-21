@@ -33,7 +33,7 @@
 <img src="./src/design/responsivo-habilidades.jpg" alt="Resposivo Habilidade">
 <img src="./src/design/responsivo-habilidades2.jpg" alt="Resposivo Habilidade 2">
 <img src="./src/design/responsivo-projetos.jpg" alt="Resposivo Projetos">
-<img src="./src/design/responsivo-footer.jpg.jpg" alt="Resposivo Footer">
+<img src="./src/design/responsivo-footer.jpg" alt="Resposivo Footer">
 </div> 
 
 
@@ -48,14 +48,14 @@
 <h2>:bookmark_tabs: Descrição</h2>
 <p>Meu portfólio. Aplicação criada para mostrar os projetos que irei desenvolver a longo da minha carreira.</p>
 
-# informativo
+# Informativo
 
 <p> A conclusão desse portfólio foi incrível para mim, tive um pouco de dificuldade no desktop, mas creio que vou melhorar ainda mais, pois sou capaz de aprendizado rápido. 
-Minha maior dificuldade foi na parte responsivo, pois tive que passa um tempo parado para estudar ainda mais a documentação, pois não estava conseguindo tirar alguns bugs. Hoje já consegui resolver.
+Minha maior dificuldade foi na parte responsivo, tive que passa um tempo parado para estudar ainda mais a documentação, pois não estava conseguindo tirar alguns bugs. Hoje já consegui resolver.
 Não vejo a hora de fazer o portfolio2.0 mudando todo designer, porém com a tecnologia React, quero me aprofundar ainda mais na área, pois sei que serei uma grande profissional.</p>
 
-<h2>Segue o Figma do projeto, ao clicar na imagem do figma, você será redirecionado</h2>
-<p align="left"> <a href="https://www.figma.com/file/kgDwTbxNsDqwV5podb3jEp/Untitled?type=design&node-id=1-2&t=qLCsCyR2cvkcURCn-0" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a>
+<h3>Ao clicar na imagem do figma, você será redirecionado a pagina onde foi criado o designer do portfolio</h3>
+<p align="left"> <a href="https://www.figma.com/file/kgDwTbxNsDqwV5podb3jEp/Untitled?type=design&node-id=1-2&t=qLCsCyR2cvkcURCn-0" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> </p>
 
 <h2>:hammer: Créditos</h2>
 <table>
