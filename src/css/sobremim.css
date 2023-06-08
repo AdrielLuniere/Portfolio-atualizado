@@ -1,12 +1,4 @@
 
-.section{
-    background-image: url(../img/objetos.png);
-    background-size: 1320px 615px;
-    background-repeat: no-repeat;
-    background-position: 99%;
-
-}
-
 .sobre-mim .row{
     align-items: center;
 }
@@ -51,6 +43,14 @@
     transform: scale(1.05);
 }
 
+.img-objetos2{
+    position: absolute;
+    width: 1320px;
+    height: 615.32px;
+    left: 250px;
+    top: 730px;
+    z-index: -1;
+}
 
 .objetos-quadrado2 .quadrado2{
     width: 85px;
@@ -104,8 +104,13 @@
         background-size: 600px;
         background-position: 50%;
         max-width: 100%;
+    }
 
-       
+    .img-objetos2{
+        position: absolute;
+        left: 110px;
+        width: 0;
+        height: 0;
     }
 
     .sobre-mim .row{

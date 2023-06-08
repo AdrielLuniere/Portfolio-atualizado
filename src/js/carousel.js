@@ -1,64 +1,39 @@
-const galleryContainer = document.querySelector('.gallery-container');
-const galleryControlsContainer = document.querySelector('.gallery-controls');
-const galleryControls = ['previous', 'next'];
-const galleryItems = document.querySelectorAll('.gallery-item');
+const imagens = document.querySelectorAll ('.imagem-painel');
+const setaAvancar = document.getElementById ('btn-avancar');
+const setaVoltar = document.getElementById ('btn-voltar');
+let imagemAtual = 0;
 
-class Carousel {
-    constructor(container, items, controls){
-        this.carouselContainer = container;
-        this.carouselControls = controls;
-        this.carouselArry = [...items];
-    }
+function esconderImagem(){
 
-    updateGallery(){
-        this.carouselArry.forEach(el =>{
-            el.classList.remove('gallery-item-1');
-            el.classList.remove('gallery-item-2');
-            el.classList.remove('gallery-item-3');
-            el.classList.remove('gallery-item-4');
-            el.classList.remove('gallery-item-5');
-            el.classList.remove('gallery-item-6');
-        })
-
-        this.carouselArry.slice(0,5).forEach((el, i) =>{
-            el.classList.add(`gallery-item-${i+1}`);
-        })
-    }
-
-    setCurrentState(direction){
-        if(direction.className == 'gallery-controls-previous'){
-            this.carouselArry.unshift(this.carouselArry.pop());
-        }else{
-            this.carouselArry.push(this.carouselArry.shift());
-        }
-
-        this.updateGallery();
-    }
-
-    setControls() {
-        this.carouselControls.forEach(control => {
-            galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
-            document.querySelector(`.gallery-controls-${control}`).innerText = control;
-        });
-    
-    }
-    
-    useControls() {
-        const triggers = [...galleryControlsContainer.childNodes];
-        triggers.forEach(control => {
-            control.addEventListener('click', e => {
-                e.preventDefault();
-                this.setCurrentState(control);
-            });
-        });
-    }
-
+    imagens.forEach(imagem => {
+        imagem.classList.remove('mostrar')
+    });
 }
 
+function mostrarImagem(){
+    imagens[imagemAtual].classList.add('mostrar');
+}
 
+setaAvancar.addEventListener('click', function () {
 
-const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
+    const totalDeImagens = imagens.length - 1;
+    if(imagemAtual === totalDeImagens){
+        console.log('erro')
+        return;
+    }
+    imagemAtual++;
+    esconderImagem();
+    mostrarImagem();
+ })
 
+ setaVoltar.addEventListener('click', function () {
 
-exampleCarousel.setControls();
-exampleCarousel.useControls();
+    if( imagemAtual === 0) {
+        return;
+    }   
+    imagemAtual--;
+
+    esconderImagem();
+    mostrarImagem();
+    
+ })

@@ -1,201 +1,100 @@
 
-.projetos{
-    background-image: url(../img/objetos.png);
-    background-size: 1320px 615px;
-     background-repeat: no-repeat;
-    background-position: 99%;
-}
-
 .project {
     padding: 70px 0px 0px;
 }
 
-.objetos-quadrado4 .quadrado4{
-    width: 85px;
-    height: 85px;
-    background-color: var(--cor-objetos);  
-}
-
-.objetos-quadrado4{
+.img-objetos4{
     position: absolute;
-    width: 85px;
-    height: 85px;
-    left: 1500px;
-    top: 2717px;
-} 
-
-.objetos-retangulo4 .enfeite4{
-    width: 45px;
-    height: 313px;
-    background-color: var(--cor-objetos);  
+    width: 1320px;
+    height: 615.32px;
+    left: 250px;
+    top: 2100px;
+    z-index: -1;
 }
 
-.objetos-retangulo4{
-    position: absolute;
-    left: 0px;
-    top: 2300px;
-}
-.gallery{
-    width: 100%;
-}
 
-.gallery-container{
+.projetos .paineis{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    display: flex;
-    height: 400px;
-    margin: 0 auto;
-    max-width: 1000px;
+    height: 700px;
     position: relative;
-    z-index: 0;
 }
 
-.gallery-item{
-    height: 200px;
+.projetos .paineis .imagem-painel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
     opacity: 0;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-    width: 330px;
-    z-index: 0;
-    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.projetos .paineis .projeto1{
+    background-image: url('../img/ApiBuscandoUsuario.jpg');
+}
+
+.projetos .paineis .projeto2{
+    background-image: url('../img/cardPokemon.jpg');
+}
+
+.projetos .paineis .projeto3{
+    background-image: url('../img/MarioBros.jpg');
+}
+
+.projetos .paineis .projeto4{
+    background-image: url('../img/mini-portfolio.jpg');
+}
+
+.projetos .paineis .projeto5{
+    background-image: url('../img/pokeAPI.jpg');
+}
+
+.projetos .paineis .projeto6{
+    background-image: url('../img/TheLast.jpg');
+}
+
+.projetos .paineis .projeto7{
+    background-image: url('../img/listagem-de-pokemon.jpg');
+}
+
+.projetos .paineis .imagem-painel.mostrar{
+    opacity: 4;
+
+}
+
+
+.projetos .paineis .titulo{
+    color: var(--cor-branca);
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw);
+}
+
+.projetos .paineis .seta{
+    background-image: url(../img/seta.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
-}
-
-.gallery-item-1{
-    left: 15%;
-    opacity: .4;
-    transform: translateX(-50%);
-}
-
-.gallery-item-2, .gallery-item-4{
-    height: 250px;
-    opacity: 0.8;
-    width: 380px;
-    z-index: 1;
-}
-
-.gallery-item-2{
-    left: 30%;
-    transform: translateX(-50%);
-}
-
-.gallery-item-3{
-    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
-    width: 300px;
-    height: 250px;
-    opacity: 1;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 430px;
-    z-index: 2;
-}
-
-.gallery-item-4{
-    left: 70%;
-    transform: translateX(-50%);
-}
-
-.gallery-item-5{
-    left: 85%;
-    opacity: .4;
-    transform: translateX(-50%);
-
-}
-
-.gallery-item-6{
-    left: 85%;
-    opacity: .9;
-    transform: translateX(-65%);
-}
-
-.gallery-controls{
-    display: flex;
-    justify-content: center;
-    height: 100px;
-}
-
-.gallery-controls button{
-    background-color: transparent;
-    border: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
     cursor: pointer;
-    font-size: 30px;
-    margin: 0 50px;
-    padding: 0 12px;
-    text-transform: capitalize;
 }
 
-.gallery-controls-button:focus{
-    outline: none;
-
+.projetos .paineis .seta.btn-voltar{
+    left: 20px;
+    transform: rotateY(180deg);
 }
 
-.gallery-controls-previous{
-    color: var(--cor-objetos);
-    position: relative;
-}
 
-.gallery-controls-previous::before{
-    border: solid #00ba89;
-    border-width: 0 5px 5px 0;
-    content: '';
-    height: 5px;
-    left: -30px;
-    padding: 10px;
-    position: absolute;
-    top: 25%;
-    transform: rotate(135deg) translateY(-50%);
-    transition: left 0.15s ease-in-out;
-    width: 5px;
-}
-
-.gallery-controls-previous:hover::before{
-    left: -40px;
-}
-
-.gallery-controls-next{
-    color: var(--cor-objetos);
-    position: relative;
-}
-
-.gallery-controls-next::before{
-    border: solid #00ba89;
-    border-width: 0 5px 5px 0;
-    content: '';
-    display: inline-block;
-    height: 5px;
-    padding: 10px;
-    position: absolute;
-    right: -30px;
-    top: 45px;
-    transform: rotate(-45deg) translateY(-50%);
-    transition: right 0.15s ease-in-out;
-    width: 5px;
-}
-
-.gallery-controls-next:hover:before{
-    right: -40px;
-
-}
-
-.gallery-nav{
-    bottom: -15px;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    width: 100%;
-}
-
-.gallery-nav li{
-    background-color: #ccc;
-    border-radius: 50%;
-    height: 10px;
-    margin: 0 16px;
-    width: 10px;
-}
-
-.gallery-nav li.gallery-item-selected{
-    background: #555;
+.projetos .paineis .seta.btn-avancar{
+    right: 20px;
 }
 
 
@@ -206,6 +105,10 @@
     flex-direction: column;
     align-items: center;
     
+}
+
+.github-link{
+    padding: 20px;
 }
 
 .github-link a {
@@ -234,64 +137,60 @@
         background-position: 50%;
 
     }
-    .gallery-container{
-        height: 350px;
-    }
-    .objetos-quadrado4 .quadrado4{
-        position: absolute;
-        left: -1450px;
-        width: 0;
-        height:0;
-        
+
+    .projetos .paineis{
+        height: 250px;
     }
 
-    .objetos-retangulo4 .enfeite4{
+    .img-objetos4{
+        position: absolute;
+        left: 110px;
         width: 0;
         height: 0;
     }
+
 
 }
 
 @media (max-width: 420px){
 
 
-    .gallery .section-title h2{
-        font-size: 35px;
+    .projetos .paineis .titulo{
+        color: var(--cor-branca);
+        text-transform: uppercase;
+        font-size: 15px;
     }
     .github-link a {
         background-color: var(--cor-objetos);
         color: var(--cor-branca);
-        font-size: var(--fonte-normal);
+        font-size: 15px;
         padding: 10px 20px;
         border-radius: 15px;
-    }    
+    }
+
+    .github-link{
+        padding: 10px;
+        
+    } 
+    
 
 }
 
 @media (max-width: 370px){
 
-    .gallery-controls button{
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    font-size: 17px;
-    font-family: var(--fonte-segundaria);
-    margin: 0 50px;
-    padding: 0 12px;
-    text-transform: capitalize;
-    }
-
-    .gallery .section-title h2{
-        font-size: 35px;
-    }
 
     .github-link a {
         background-color: var(--cor-objetos);
         color: var(--cor-branca);
-        font-size: var(--fonte-normal);
+        font-size: 15px;
         padding: 10px 20px;
         border-radius: 15px;
     }    
+
+    .github-link{
+        padding: 10px;
+    } 
+    
 
 }
 

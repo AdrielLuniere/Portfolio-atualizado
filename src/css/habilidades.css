@@ -1,9 +1,4 @@
-.habilidades{
-    background-image: url(../img/objetos.png);
-    background-size: 1320px 615px;
-    background-repeat: no-repeat;
-    background-position: 99%;
-}
+
 
 .habilidades-pd {
     padding: 80px;
@@ -53,6 +48,14 @@
     max-width: 40%;
 }
 
+.img-objetos3{
+    position: absolute;
+    width: 1320px;
+    height: 615.32px;
+    left: 250px;
+    top: 1399px;
+    z-index: -1;
+}
 
 .objetos-quadrado3 .quadrado3{
     width: 85px;
@@ -148,6 +151,13 @@
         background-size: 600px;
         background-position: 50%;
         max-width: 100%;
+    }
+
+    .img-objetos3{
+        position: absolute;
+        left: 110px;
+        width: 0;
+        height: 0;
     }
 
     .conteiner-descricao {
