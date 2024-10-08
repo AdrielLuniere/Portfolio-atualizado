@@ -62,7 +62,7 @@ Não vejo a hora de fazer o portfolio2.0 mudando todo designer, porém com a tec
   <tr>
     <td align="center">
       <a href="https://github.com/AdrielLuniere">
-        <img src="https://github.com/AdrielLuniere/Primeiro-Portif-lio-/blob/main/Portfolio-main/assets/img/eu4.png" width="100px;" alt="Foto do Adriel Lunière"/><br>
+        <img src="https://github.com/AdrielLuniere/Portfolio-atualizado/blob/main/src/img/eu.png" width="100px;" alt="Foto do Adriel Lunière"/><br>
         <sub>
           <b>Adriel Lunière</b>
         </sub>
