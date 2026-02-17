@@ -1,339 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1, user-scalable=no " />
-    <title>Adriel Luniere - Desenvolvedor Frontend</title>
-    <link
-      rel="shortcut icon"
-      href="src/img/ms-icon-310x310.png"
-      type="image/x-icon"
-    />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adriel Luniere | Desenvolvedor Frontend</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Portfólio de Adriel Luniere, um Desenvolvedor Frontend especializado em criar interfaces web de alta qualidade e pixel-perfect.">
+    <meta name="keywords" content="Desenvolvedor Frontend, Web Developer, React, JavaScript, Portfólio, Adriel Luniere">
+    <meta name="author" content="Adriel Luniere">
 
-    <link rel="stylesheet" href="src/css/font-awesome.css" />
-    <link rel="stylesheet" href="src/css/reset.css" />
-    <link rel="stylesheet" href="src/css/variables.css" />
-    <link rel="stylesheet" href="src/css/globais.css" />
-    <link rel="stylesheet" href="src/css/header.css" />
-    <link rel="stylesheet" href="src/css/home.css" />
-    <link rel="stylesheet" href="src/css/sobremim.css" />
-    <link rel="stylesheet" href="src/css/habilidades.css" />
-    <link rel="stylesheet" href="src/css/projetos.css" />
-    <link rel="stylesheet" href="src/css/footer.css">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="row justify-content-between alinhar-itens-no-centro">
-          <a>
-            <img class="img-logo" src="src/img/logo.png" alt="logo" />
-          </a>
-          <nav>
-            <input id="menu-hambuguer" type="checkbox" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="src/img/ms-icon-310x310.png" type="image/x-icon">
 
-            <label class="close-menu-label" for="menu-hambuguer">
-              <div class="menu">
-                <span class="hambuguer"></span>
-              </div>
-            </label>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Design System & Styles -->
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/components.css">
+    <link rel="stylesheet" href="src/css/sections.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- DevIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#sobre-mim">Sobre mim</a></li>
-              <li><a href="#habilidades">Habilidades</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <style>
+        /* Simple fade-in animation class to be triggered by JS */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, visibility;
+        }
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
 
-    <section class="home" id="home">
-      <div class="container">
-        <div class="row full-screen alinhar-itens-no-centro">
-          <div class="text-home">
-            <h1>ADRIEL LUNIERE</h1>
-            <h2>DESENVOLVEDOR FRONTEND</h2>
-            <div class="quadrado">
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
-              <div class="quadradinho"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">AL</a>
+            
+            <button class="menu-toggle" aria-label="Alternar navegação" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+                <a href="src/arquivo/cv.pdf" target="_blank" class="btn btn-primary">Currículo</a>
             </div>
+        </div>
+    </nav>
 
-            <p class="text-frase">
-              O fracasso é somente uma oportunidade <br />de começar de novo,
-              porém de forma mais <br />inteligente - Henri Ford<br />
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="container">
+            <p class="hero-greeting">Olá, meu nome é</p>
+            <h1 class="hero-title">Adriel Luniere.</h1>
+            <h2 class="hero-subtitle">Sou Desenvolvedor Full Stack.</h2>
+            <p class="hero-desc">
+                Construo soluções completas para a web — da interface à lógica de negócio. Desenvolvo aplicações modernas, performáticas e bem estruturadas, utilizando tecnologias como JavaScript, React e Node.js.
+                Tenho foco em criar produtos digitais funcionais, acessíveis e centrados no usuário, unindo experiência visual, arquitetura bem definida e código escalável para transformar ideias em soluções reais.
             </p>
-
-            <div class="link">
-              <div class="content">
-                <div class="bola"></div>
-                <div class="bola"></div>
-                <div class="bola"></div>
-                <div class="bola"></div>
-              </div>
-              <div class="linkedin">
-                <a
-                  href="https://www.linkedin.com/in/adriel-lunière-41b88716a/"
-                  target="_blank"
-                  class="link"
-                  >Linkedin</a
-                >
-              </div>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">Veja meu trabalho!</a>
+                <a href="#contact" class="btn btn-solid">Entre em contato</a>
             </div>
-            <div class="objetos-retangulo">
-              <div class="enfeite"></div>
-            </div>
-            <div class="objetos-quadrado">
-              <div class="quadrado1"></div>
-            </div>
-          </div>
-            <div class="outer-shadow">
-                <img src="./src/img/notbook.png" alt="notbook">
-            </div>
-
-            <div class="img-objetos">
-              <img src="./src/img/objetos.png" alt="notbook">
-            </div>
-
         </div>
-      </div>
     </section>
 
-    <section class=" sobre-mim section" id="sobre-mim">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h2>Sobre mim</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="imagem-sobre-mim">
-            <div class="img-box">
-              <img src="src/img/eu.png" alt="avatar" />
-            </div>            
-          </div>
-          <div class="informacoes-sobre-mim">
-            <p>
-              <strong> Olá sou Adriel Luniere</strong>, um apaixonado por tecnologia. Meu
-              primeiro contato com programação foi em 2007, quando ainda estava
-              no ensino médio. Apesar de ter gostado da área, só comecei a dar o
-              devido foco em 2022, quando um amigo me apresentou o Desenvolvedor
-              Fullstack.
-            </p>
-            <p>
-              Hoje já entendo tecnologias voltadas para o Front-end e pretendo
-              no futuro aprender o Back-end pois quero seguir essa área(Fullstack), gosto de
-              aprender coisas novas, e quero investir ainda mais nessa área para
-              meus conhecimentos para que no futuro eu seja um grande
-              profissional.
-            </p>
-
-            <div class="botoes">
-              <a
-                href="src/arquivo/cv.pdf"
-                target="_blank"
-                class="botao outter-shadow"
-                >Veja meu CV</a
-              >
-            </div>
-
-            <div class="objetos-quadrado2">
-              <div class="quadrado2"></div>
-            </div>
-
-            <div class="objetos-retangulo2">
-              <div class="enfeite2"></div>
-            </div>
-
-            <div class="img-objetos2">
-              <img src="./src/img/objetos.png" alt="objetos">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="text-accent"></span> Sobre Mim</h2>
             </div>
             
-          </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Olá! Sou Adriel Luniere, Desenvolvedor Full Stack apaixonado por criar soluções que vivem e evoluem na internet.
+                    </p>
+                    <p>
+                        Meu interesse por desenvolvimento começou ainda no ensino médio, quando explorava HTML e CSS personalizando páginas e entendendo como a web funcionava por trás dos bastidores. Desde então, transformei essa curiosidade em prática constante e evolução técnica.
+                    </p>
+                    <p>
+                        Hoje atuo no desenvolvimento de aplicações web completas, trabalhando tanto na camada de interface quanto na lógica de negócio e integração com APIs. Tenho foco em construir produtos modernos, acessíveis e bem estruturados, priorizando performance, organização de código e experiência do usuário.
+                    </p>
+                     <p>
+                        Busco sempre aplicar boas práticas, arquitetura limpa e melhoria contínua, criando soluções escaláveis e centradas nas necessidades reais do usuário.
+                    </p>
+                    <p>Tecnologias que utilizo com mais frequência:</p>
+                    <ul class="skills-list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Git & GitHub</li>
+                        <li>Princípios de UI/UX</li>
+                    </ul>
+                </div>
+                <div class="about-image-wrapper">
+                    <img src="src/img/eu.png" alt="Adriel Luniere" class="about-image">
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    
+    <!-- Skills Section (Visual) -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="text-accent"></span> Tecnologias</h2>
+            <p class="text-center" style="margin-bottom: 2rem;">Ferramentas e tecnologias que uso para dar vida aos produtos.</p>
+            
+            <div class="skills-grid">
+                <!-- HTML -->
+                <div class="skill-tag">
+                    <i class="devicon-html5-plain colored"></i> HTML5
+                </div>
+                <!-- CSS -->
+                <div class="skill-tag">
+                    <i class="devicon-css3-plain colored"></i> CSS3
+                </div>
+                <!-- JS -->
+                <div class="skill-tag">
+                    <i class="devicon-javascript-plain colored"></i> JavaScript
+                </div>
+                <!-- React -->
+                <div class="skill-tag">
+                    <i class="devicon-react-original colored"></i> React
+                </div>
+                <!-- TypeScript -->
+                <div class="skill-tag">
+                    <i class="devicon-typescript-plain colored"></i> TypeScript
+                </div>
+                <!-- Git -->
+                <div class="skill-tag">
+                    <i class="devicon-git-plain colored"></i> Git
+                </div>
+                <!-- GitHub -->
+                <div class="skill-tag">
+                    <i class="devicon-github-original"></i> GitHub
+                </div>
+                <!-- Figma -->
+                <div class="skill-tag">
+                    <i class="devicon-figma-plain colored"></i> Figma
+                </div>
+                <!-- VS Code -->
+                <div class="skill-tag">
+                    <i class="devicon-vscode-plain colored"></i> VS Code
+                </div>
+                <!-- Java -->
+                <div class="skill-tag">
+                    <i class="devicon-java-plain colored"></i> Java
+                </div>
+                <!-- SQL -->
+                <div class="skill-tag">
+                    <i class="devicon-mysql-plain colored"></i> SQL
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="habilidades" id="habilidades">
-      <div class="centralizador">
-        <div class="habilidades-pd">
-          <div class="row">
-            <div class="section-title">
-              <h2>Habilidades</h2>
-            </div>
-          </div>
-          <div class="skills-descricao">
-            <div class="conteiner-skills">
-              <div class="skill-box skill1 html-skill">
-                <img
-                  class="icones-habilidades"
-                  src="src/img/html.png"
-                  alt="html-icon"
-                />
-              </div>
-              <div class="skill-box skill2 css-skill">
-                <img
-                  class="icones-habilidades"
-                  src="src/img/css.png"
-                  alt="css-icon"
-                />
-              </div>
-              <div class="skill-box skill3 js-skill">
-                <img
-                  class="icones-habilidades"
-                  src="src/img/js.png"
-                  alt="js-icon"
-                />
-              </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="text-accent"></span> Projetos</h2>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Projeto Anterior"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <!-- Project 1 -->
+                        <li class="carousel-slide current-slide">
+                            <div class="card project-card">
+                                <img src="src/img/ApiBuscandoUsuario.jpg" alt="Disparador WhatsApp" class="project-image">
+                                <div class="project-content">
+                                    <h3 class="project-title">DISPARADOR-WHATSAPP</h3>
+                                    <div class="project-description">
+                                        DESENVOLVIMENTO DE DISPARADOR WHATSAPP COM FLUXOS AUTOMÁTICOS.
+                                    </div>
+                                    <ul class="project-tech-list">
+                                        <li>Node.js</li>
+                                        <li>React</li>
+                                        <li>TypeScript</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a href="#" class="icon-link" aria-label="Link do GitHub"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="icon-link" aria-label="Link Externo"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
 
-              <div class="skill-box skill4">
-                <img
-                  class="icones-habilidades"
-                  src="src/img/react.png"
-                  alt="react-icon"
-                />
-              </div>
-              <div class="skill-box skill5">
-                <img
-                  class="icones-habilidades"
-                  src="src/img/typescript.png"
-                  alt="typescript-icon"
-                />
-              </div>
-              <div class="skill-box skill16">
-                <img
-                  class="icones-habilidades"
-                  src="src/img/github.png"
-                  alt="github-icon"
-                />
-              </div>
-              <div class="skill-box skill17">
-                <img
-                  class="icones-habilidades"
-                  src="src/img/designUX.png"
-                  alt="UX-icon"
-                />
-              </div>
-              <div class="skill-box skill18">
-                <img
-                  class="icones-habilidades"
-                  src="src/img/designUI.png"
-                  alt="UI-icon"
-                />
-              </div>
-              <div class="objetos-quadrado3">
-                <div class="quadrado3"></div>
-              </div>
+                        <!-- Project 2 -->
+                        <li class="carousel-slide">
+                            <div class="card project-card">
+                                <img src="src/img/banner.png" alt="SaaS Gerenciamento de Boletos" class="project-image">
+                                <div class="project-content">
+                                    <h3 class="project-title">SaaS Gerenciamento de Boletos</h3>
+                                    <div class="project-description">
+                                        Sistema completo para gestão de boletos com dashboard, autenticação segura e geração de PDFs.
+                                    </div>
+                                    <ul class="project-tech-list">
+                                        <li>Next.js 16</li>
+                                        <li>TypeScript</li>
+                                        <li>Tailwind CSS</li>
+                                        <li>Prisma</li>
+                                        <li>NextAuth.js</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a href="#" class="icon-link" aria-label="Link do GitHub"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="icon-link" aria-label="Link Externo"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
 
-              <div class="objetos-retangulo3">
-                <div class="enfeite3"></div>
-              </div>
-            </div>
-            <div class="conteiner-descricao">
-              <p class="texto-descricao">
-                *Passe o mouse por cima de alguma habilidade para ler a
-                descrição*
-              </p>
-            </div>
+                        <!-- Project 3 (Restored) -->
+                        <li class="carousel-slide">
+                            <div class="card project-card">
+                                <img src="src/img/MarioBros.jpg" alt="Página Mario Bros" class="project-image">
+                                <div class="project-content">
+                                    <h3 class="project-title">Landing Page Super Mario</h3>
+                                    <div class="project-description">
+                                        Uma landing page promocional para o filme Super Mario Bros. Apresenta animações imersivas e elementos interativos.
+                                    </div>
+                                    <ul class="project-tech-list">
+                                        <li>HTML5</li>
+                                        <li>CSS Keyframes</li>
+                                        <li>Design Responsivo</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a href="#" class="icon-link" aria-label="Link do GitHub"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="icon-link" aria-label="Link Externo"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- Project 4 -->
+                        <li class="carousel-slide">
+                            <div class="card project-card">
+                                <img src="src/img/TheLast.jpg" alt="Projeto The Last of Us" class="project-image">
+                                <div class="project-content">
+                                    <h3 class="project-title">Fan Page The Last of Us</h3>
+                                    <div class="project-description">
+                                        Um site tributo para a série The Last of Us. Foca em storytelling e design atmosférico usando modos escuros e mídia rica.
+                                    </div>
+                                    <ul class="project-tech-list">
+                                        <li>JavaScript</li>
+                                        <li>Grid Layout</li>
+                                        <li>Multimídia</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a href="#" class="icon-link" aria-label="Link do GitHub"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="icon-link" aria-label="Link Externo"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="img-objetos3">
-              <img src="./src/img/objetos.png" alt="objetos">
+                <button class="carousel-btn next-btn" aria-label="Próximo Projeto"><i class="fas fa-chevron-right"></i></button>
             </div>
-
-          </div>
+            
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-slide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+            
+            <div class="text-center" style="margin-top: var(--spacing-md);">
+                <a href="https://github.com/AdrielLuniere" target="_blank" class="btn btn-primary">Ver Mais no GitHub</a>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="projetos" id="projetos">
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <p class="text-accent">O que vem a seguir?</p>
+            <h2 class="section-title">Vamos conversar</h2>
+            <p style="margin-bottom: 2rem;">
+                Tem uma ideia, projeto ou oportunidade em mente?
+Estou sempre aberto a novos desafios e colaborações.
 
-      <div class="paineis">
-        <h1 class="titulo">Meus Projetos</h1>
-        <div class="imagem-painel projeto1 mostrar"></div>
-        <div class="imagem-painel projeto2"></div>
-        <div class="imagem-painel projeto3"></div>
-        <div class="imagem-painel projeto4"></div>
-        <div class="imagem-painel projeto5"></div>
-        <div class="imagem-painel projeto6"></div>
-        <div class="imagem-painel projeto7"></div>
-
-        <a id="btn-voltar" class="seta btn-voltar">voltar</a>
-        <a id="btn-avancar" class="seta btn-avancar">avançar</a>
-      </div>
-
-        <div class="github-link">
-          <a
-            href="https://github.com/AdrielLuniere?tab=repositories"
-            target="_blank"
-            >Repositórios no github</a
-          >
+Preencha o formulário abaixo ou entre em contato diretamente — responderei o mais breve possível para conversarmos sobre como posso contribuir para transformar sua ideia em realidade.
+            </p>
+            
+            <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
         </div>
-        <div class="gallery-controls"></div>
-
-        <div class="objetos-quadrado4">
-          <div class="quadrado4"></div>
-        </div>
-
-        <div class="objetos-retangulo4">
-          <div class="enfeite4"></div>
-        </div>
-
-
-      </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-      <div class="redes">
-        <h2>E-mail: adrielbinda@gmail.com</h2>
-        <div class="redes-sociais">
-          <a href="https://www.linkedin.com/in/adriel-luni%C3%A8re-41b88716a/" target="_blank" >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/AdrielLuniere" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/adrielluniere/" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/AdrielLuniere" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/adrielluniere/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/adriel_luniere/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>Design & Construção por Adriel Luniere</p>
         </div>
-      </div>
     </footer>
 
-    <script src="src/js/habilidades.js"></script>
-    <script src="./src/js/carousel.js"></script>
-  </body>
+    <!-- Project Details Modal (Hidden by default) -->
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <h2 id="modal-title">Título do Projeto</h2>
+            <img src="" alt="Detalhe do Projeto" id="modal-image" style="width: 100%; border-radius: 4px; margin-bottom: 20px;">
+            <p id="modal-description">Descrição detalhada sobre o projeto...</p>
+            <!-- Content would be dynamically injected via JS -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="src/js/main.js"></script>
+</body>
 </html>

@@ -1,23 +1,39 @@
-:root{
-    --cor-fundo-azul : rgba(22, 20, 97, 1);
-    --cor-objetos: rgba(91, 139, 200, 1);
-    --cor-circulos: rgba(62, 195, 217, 1);
-    --cor-branca: rgba(255, 255, 255, 1);
-    --cor-font-nav: rgba(101, 199, 203, 1);
-    --cor-font-responsivo: rgba(0, 0, 0, 1);
-    --cor-hambuguer: rgba(0, 0, 0, 1);
-}
+:root {
+  /* Colors */
+  --bg-primary: #0a192f;
+  --bg-secondary: #112240;
+  --bg-tertiary: #233554;
 
-:root{
-    --fonte-primaria: 'Montserrat', sans-serif;
-    --fonte-segundaria: 'Krona One', sans-serif;
-    --fonte-extra-grande: 6.5rem;
-    --fonte-grande: 4rem;
-    --fonte-medio: 2.8rem;
-    --fonte-normal: 2.2rem;
-    --fonte-pequena: 2rem;
-}
+  --text-primary: #ccd6f6;
+  --text-secondary: #8892b0;
+  --text-accent: #64ffda;
 
-:root{
-    --mobile-padding: 3rem;
+  --accent-primary: #64ffda; /* Cyan */
+  --accent-secondary: #ff8c00; /* Orange - for strong CTAs if needed, otherwise stick to Cyan */
+  --accent-tint: rgba(100, 255, 218, 0.1);
+
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Typography */
+  --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "Fira Code", "Roboto Mono", monospace;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 1rem; /* 16px */
+  --spacing-md: 2rem; /* 32px */
+  --spacing-lg: 4rem; /* 64px */
+  --spacing-xl: 8rem; /* 128px */
+
+  /* Borders & Transitions */
+  --border-radius: 4px;
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --shadow-sm: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  --shadow-md: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+
+  /* Layout */
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
+  --container-width: 1200px;
 }
