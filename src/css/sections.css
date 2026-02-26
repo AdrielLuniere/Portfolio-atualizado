@@ -290,6 +290,29 @@
     max-width: 200px;
 }
 
+.form-status {
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.9rem;
+    display: none; /* Hidden by default */
+}
+
+.form-status.success {
+    display: block;
+    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--accent-primary);
+    border: 1px solid var(--accent-primary);
+}
+
+.form-status.error {
+    display: block;
+    background-color: rgba(255, 100, 100, 0.1);
+    color: #ff6464;
+    border: 1px solid #ff6464;
+}
+
 @media (max-width: 768px) {
   .about-content {
     grid-template-columns: 1fr;

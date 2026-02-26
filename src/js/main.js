@@ -168,4 +168,53 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // Contact Form AJAX Submission
+  const contactForm = document.getElementById('contact-form');
+  const formStatus = document.getElementById('form-status');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.textContent;
+
+      // Loading state
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+      formStatus.textContent = '';
+      formStatus.className = 'form-status';
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: contactForm.method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          formStatus.textContent = 'Mensagem enviada com sucesso! Logo entrarei em contato.';
+          formStatus.classList.add('success');
+          contactForm.reset();
+        } else {
+          const data = await response.json();
+          if (Object.hasOwn(data, 'errors')) {
+            formStatus.textContent = data['errors'].map(error => error['message']).join(', ');
+          } else {
+            formStatus.textContent = 'Ops! Ocorreu um erro ao enviar sua mensagem.';
+          }
+          formStatus.classList.add('error');
+        }
+      } catch (error) {
+        formStatus.textContent = 'Erro de conexão. Tente novamente mais tarde.';
+        formStatus.classList.add('error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+      }
+    });
+  }
 });
